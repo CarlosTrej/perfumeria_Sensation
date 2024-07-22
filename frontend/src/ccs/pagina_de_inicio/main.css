@@ -1,0 +1,136 @@
+@import url('./Container.css');
+@import url('./hero.css');
+@import url('./titulo_1.css');
+@import url('./black-card.css');
+@import url('./navbar.css');
+@import url('./footer.css');
+@import url('contact.css');
+@import url('./carritoCompras.css');
+@import url('carrusel.css');
+@import url("./../registro.css");
+@import url("./../addcard.css");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+@import url("./detail.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Nunito:ital,wght@0,200;1,200&family=Roboto+Slab:wght@300&display=swap');
+@import url('./aboutMe.css');
+
+/* cards de los productos */
+
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: #B4D9D5;
+}
+.container{
+display:  flex;
+justify-content: center;
+flex-wrap: wrap;
+
+
+}
+h2,h3,h4,h5,h1{
+    font-family: 'PT Sans', sans-serif; 
+    ;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    
+}
+
+.card{
+background:#B4D9D5 ;
+width: 330px;
+height: 550px;
+ margin: 18px;
+ border-radius: 15px ;
+ padding:  0 0 4em 0;
+ font-weight: 500;
+
+ 
+ }
+ 
+.card-image{
+background-color: #FEFCF7;
+height: 300px;
+margin-bottom: 18px;
+background-size: cover;
+border-radius: 5px 5px 0 0 ;
+
+
+}
+
+.car-1{
+  margin: -1em 0;
+  padding: 4em 0;
+background-image: url(/src/images/450_1000.png);
+
+}
+.car-2{
+    margin: -1em 0;
+    padding: 4em 0;
+    background-image: url(/src/images/hombre.jpg);
+  }
+
+.car-3{
+  background-image: url(/src/images/mujer.jpg);
+  margin: -1em 0;
+  padding: 4em 0;
+}
+ .car-4{
+     background-image: url(/src/images/images_index/CortePremium.png);
+ }
+
+ .car-5{
+     background-image: url(/src/images/images_index/corteRes.png);
+ }
+
+#res{
+    padding: 6px;
+    text-align: center;
+    
+
+}
+
+
+.card h2{
+    padding: 18px;
+    text-align: center;
+   
+    
+}
+
+.card p{
+    text-align: center;
+    padding: 10px;
+}
+
+.card a{
+
+    border-radius: 3px;
+    background-color: #978a67;
+    border: 0.25px outset #948661;
+    color:#332502;
+    font-size: 1.3em;
+    font-weight:700;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+
+.card a:hover{
+  background-color: #382107;
+  border: 3px outset #363535;
+  color:#F2E6D8;
+}
+
+.card:hover{
+background-color: rgb(211, 206, 206);
+
+color: rgb(46, 9, 9);
+cursor: pointer;
+transform: scale(1.03);
+transition: all 0.1s ease;
+
+}

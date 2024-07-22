@@ -1,0 +1,54 @@
+#addcard {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:  #261302;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: black;
+    color: black;
+    font-weight: 700;
+    box-shadow: 10px 10px 10px 5px #000;
+    color: white;
+    font-size: 1.4em;
+  }
+  
+  @media (max-width:767px) {
+   
+  }
+
+#añadir {
+    color:#FEFCF7/* #E9C9B2 */;
+    font-weight:bold;
+    background-color: #978a67; 
+    border: 5px outset #5c4e26;
+    padding: 0 0 1.5em 0;
+    font-size:0.9em;
+   
+}
+
+#upload_widget{
+  color:#FEFCF7;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  background-color: #978a67; 
+  border: 5px outset #5c4e26;
+  line-height: 1.5;
+  font-weight: bold;
+  width: 100%;
+  text-rendering: auto;
+  font-size:0.9em;
+}
+
+
+#upload_widget:hover{
+  background-color: #212205 ; 
+  border: 5px outset #5c4e26;
+  color:#978a67;
+}
+
+#añadir:hover{
+  background-color: #212205 ; 
+  border: 5px outset #5c4e26;
+  color:#978a67;
+}

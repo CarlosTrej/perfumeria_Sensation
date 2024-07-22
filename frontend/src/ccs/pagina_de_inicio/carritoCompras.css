@@ -1,0 +1,96 @@
+table#cart {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table#cart th,
+  table#cart td {
+    padding: 0.5em;
+    border: inset #ffffff;
+    text-align: center;
+  }
+  table#cart th{
+    background-color: #261302;
+    color: #ffff;
+    
+  }
+  
+  table#cart td {
+    border: 1px inset #e1e0e0;
+  }
+  
+  table#cart tfoot {
+    background: #FEFCF7;
+  }
+  
+  input {
+    font: inherit;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: inherit;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .btn-success {
+    color: #FEFCF7;
+    background-color: #0E8784;
+    border-color: #0E8784;
+  }
+  .btn-dark {
+    color: #FEFCF7;
+    background-color: #261302;
+    border-color: #261302;
+  }
+  
+  h1,
+  .cta,
+  h2 {
+    font-family: 'Fraunces', serif;
+    text-align: center; 
+    margin: 0 2em;
+  }
+
+  #text-title{
+    border: 1px inset #e1e0e0;
+    border-radius: 6%;
+    background-color: #261302;
+    color: white;
+    
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  .btnCar{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+  }
+
+  .btnCar button{
+    padding: 0.8em 4em;
+    border-radius: 8px;
+    color:#FEFCF7;
+ 
+  }
+
+  #btnLimpiar{
+    background-color: #685024;
+    border: 3px outset #181717;
+  }
+
+  #btnLimpiar:hover{
+    background-color: #b1a584; 
+    border: 5px outset #5c4e26; 
+  }
+
+  #btnComprar:hover{
+    background-color: #1ff0ed;
+    border: 3px outset #1cf5f1;
+    color:#212205;
+  }
+  
+  

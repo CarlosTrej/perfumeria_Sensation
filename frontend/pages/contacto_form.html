@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/ccs/pagina_de_inicio/main.css ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- navbar User -->
+      <script src="/src/js/headerUser.js"></script>
+    <!-- navbar User -->
+  <!-- navbar responsiva -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="sesiontools">
+    <a class="navbar-brand" href="../index.html">
+        <img src="../src/images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+      Sensation</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contacto_form.html">Contacto</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Productos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="products.html">Perfumes</a>
+            </div>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        
+        <ul class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i   id ="icono" class="bi bi-people-fill"></i>
+        </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="logIn.html">Inicia sesión</a>
+              <a class="dropdown-item" href="registro.html">Registro</a>
+            </div>
+        </ul>
+      </form>
+    </div>
+  </nav><!-- navbar responsiva -->
+ 
+
+      <section class="contact-clean">
+        <form  method="post"id="contact-form"  >
+   
+            <h2 class="visually-hidden" style="text-align: center;"> Contacto </h2>
+            <div class="illustration"><img src="../src/images/logo.png" style="width: 30%; height: 30%">
+              </div>
+              <h2>Completa los campos</h2>
+            <div class="mb-3"><input id="name" class="form-control" type="text" pattern="[a-zA-Z'-'\s]*" name="name" placeholder="Nombre"></div>
+            <div class="mb-3"><input id="email" class="form-control" type="email" name="email" placeholder="Correo electrónico"></div>
+            <div class="mb-3"><input id="phone" class="form-control" type="number" name="teléfono" placeholder="Teléfono"></div>
+            <div class="mb-3"><textarea id="message" class="form-control" name="message" placeholder="Mensaje" rows="14"></textarea></div>
+            <div class="mb-3"><button id="btnSend"class="form-control d-block w-100" type="submit" style="border-radius: 20px; background-color: #978a67; border: 5px outset #5c4e26; font-size: 1.5em; color:#fff; padding: 0 0 1em 0;">Enviar</button></div>
+        </form> <!-- form-contact -->
+    </section> <!-- contact-clean -->
+<!-- footer -->
+<script src="/src/js/footerComponents.js"></script>
+<!-- footer -->
+<script src="../src/js/contacto.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>

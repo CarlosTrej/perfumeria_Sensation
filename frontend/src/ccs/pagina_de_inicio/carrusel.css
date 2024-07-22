@@ -1,0 +1,44 @@
+.carrusel-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.boton-carrusel {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.izquierda {
+    left: 0;
+}
+
+.derecha {
+    right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .boton-carrusel {
+        font-size: 14px;
+        width: 20px;
+        height: 20px;
+    }
+}

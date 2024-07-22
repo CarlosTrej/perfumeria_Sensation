@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./../src/ccs/pagina_de_inicio/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+ 
+</head>
+<body>
+  <!-- navbar User -->
+  <script src="/src/js/headerUser.js"></script>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="sesiontools"></nav>
+  <!-- navbar User -->
+    <div class="container mb-5" style=" padding: 0 2em 0 2em;">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <section style="display: flex; flex-direction: columns; justify-content: center; align-items: center; ">
+                    <img src="../src/images/logo.png" style="width: 30%; height: 30%">
+                    <h4 class="text-center mb-4">Gestión de Productos</h4>
+                </section>
+                <form id="productForm" style="text-align: center;">
+                    <div class="form-group">
+                        <label for="productId" style="border: 4px outset #453920; background-color: #261302; color: aliceblue; margin: 1em 0;">ID del Producto:</label>
+                        <input type="number" class="form-control" id="productId" style="text-align: center; font-weight: 300;" required >
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block mb-3" style="border-radius: 20px; background-color: #978a67; border: 5px outset #5c4e26; font-size: 1.5em; color:#fff; width: 100%; text-align: center;" onclick="getProduct()">Consultar</button>
+
+                    <div id="productCard" class="card" style="display: none; color: #261302;">
+                        <div class="card-body">
+                            <h5 class="card-title">Detalles del Producto</h5>
+                            <div id="productDetails" style="color: #261302;" >
+
+                            </div>
+                            <button type="button" style="border-radius: 20px; background-color: #332e1f; border: 5px outset #5c4e26; font-size: 1.5em; color:#fff; width: 100%; text-align: center; margin: 1em 0;"  class="btn btn-danger" onclick="deleteProduct()">Eliminar Producto</button>
+                            <br>
+                            <button type="button" style="border-radius: 20px; background-color: #917e4c; border: 5px outset #5c4e26; font-size: 1.5em; color:#fff; width: 100%; text-align: center; margin: 0 0 1em 0;"  class="btn btn-warning" onclick="editProduct()">Editar Producto</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  <!-- footer -->
+  <script src="/src/js/footerComponents.js"></script>
+  <!-- footer -->
+  <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../src/js/rowUpdateDelete.js"></script>
+</body>
+</html>
